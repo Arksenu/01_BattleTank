@@ -5,6 +5,14 @@
 
 
 
+void ATankPlayerController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	//AimTowardsCrosshair();
+	UE_LOG(LogTemp, Log, TEXT("PlayerController ticking..."));
+}
+
+
 void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
@@ -18,6 +26,7 @@ void ATankPlayerController::BeginPlay()
 	}
 
 }
+
 
 ATank* ATankPlayerController::GetControlledTank() const
 {
