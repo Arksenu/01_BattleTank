@@ -21,5 +21,8 @@ public:
 	virtual void BeginPlay() override;
 	
 	ATank* GetPlayerTank() const;
+
+	float CrossHairXLocation = 0.5;
+	float CrossHairYLocation = 0.33333;
 	
 };
