@@ -21,5 +21,8 @@ public:
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float) override;
+
+	//Start moving tank barrel towards crosshair
+	void AimTowardsCrosshair();
 	
 };
